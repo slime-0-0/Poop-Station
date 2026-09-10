@@ -5,9 +5,6 @@
   setPreference: true
   objective: roles-antag-syndicate-agent-objective
   guides: [ Traitors ]
-  requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 1h
 
 - type: antagSpecifier
   abstract: true
@@ -32,9 +29,6 @@
   setPreference: true
   objective: roles-antag-syndicate-agent-sleeper-objective
   guides: [ Traitors ]
-  requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 1h
 
 - type: antagSpecifier
   parent: BaseTraitor

@@ -1,9 +1,9 @@
-﻿- type: entity
+- type: entity
   parent: BaseGameRule
   id: DynamicRule
   components:
   - type: GameRule
-    minPlayers: 5 # <5 is greenshift hours, buddy.
+    minPlayers: 4 # <5 is greenshift hours, buddy.
   - type: DynamicRule
     startingBudgetMin: 200
     startingBudgetMax: 350
@@ -28,7 +28,7 @@
           - !type:PlayerCountCondition
             min: 20
         - id: Revolutionary
-          weight: 5
+          weight: 15
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
@@ -40,12 +40,12 @@
           - !type:PlayerCountCondition
             min: 20
         - id: Wizard
-          weight: 5
+          weight: 10
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
           - !type:PlayerCountCondition
-            min: 10
+            min: 8
       # Roundstart Minor Rules
       - !type:GroupSelector
         conditions:
@@ -53,7 +53,12 @@
           max: 1
         children:
         - id: Thief
-          prob: 0.5
+          prob: 0
+          conditions:
+          - !type:HasBudgetCondition
+          - !type:MaxRuleOccurenceCondition
+        - id: Changeling
+          prob: 0.70
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
@@ -64,28 +69,28 @@
           min: 300 # minimum 5 minutes
         children:
         - id: SleeperAgents
-          weight: 15
+          weight: 10
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
           - !type:RoundDurationCondition
             min: 900 # 15 minutes
         - id: DragonSpawn
-          weight: 15
+          weight: 10
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
           - !type:RoundDurationCondition
-            min: 900 # 15 minutes
+            min: 1200 # 20 minutes
         - id: NinjaSpawn
-          weight: 20
+          weight: 60
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
           - !type:RoundDurationCondition
-            min: 900 # 15 minutes
+            min: 1200 # 20 minutes
         - id: ParadoxCloneSpawn
-          weight: 25
+          weight: 10
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
@@ -102,11 +107,11 @@
           - !type:RoundDurationCondition
             min: 2700 # 45 minutes
         - id: LoneOpsSpawn
-          weight: 5
+          weight: 40
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
           - !type:PlayerCountCondition
-            min: 20
+            min: 5
           - !type:RoundDurationCondition
-            min: 2100 # 35 minutes
+            min: 1200 # 20 minutes

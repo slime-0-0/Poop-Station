@@ -151,6 +151,10 @@
     duration: 1
     minimumPlayers: 15
   - type: BreakerFlipRule
+    blacklist:
+      components:
+        - ProtectedGrid
+
 
 - type: entity
   id: BureaucraticError
@@ -197,10 +201,10 @@
   id: DragonSpawn
   components:
   - type: StationEvent
-    weight: 6.5
-    earliestStart: 40
+    weight: 1.5
+    earliestStart: 25
     reoccurrenceDelay: 20
-    minimumPlayers: 20
+    minimumPlayers: 5
     duration: null
     occursDuringRoundEnd: false
   - type: SpaceSpawnRule
@@ -228,9 +232,9 @@
     weight: 6
     duration: null
     occursDuringRoundEnd: false
-    earliestStart: 30
+    earliestStart: 25
     reoccurrenceDelay: 20
-    minimumPlayers: 30
+    minimumPlayers: 5
   - type: SpaceSpawnRule
   - type: AntagLoadProfileRule
   - type: AntagObjectives
@@ -347,8 +351,8 @@
       path: /Audio/Announcements/power_off.ogg
       params:
         volume: -4
-    duration: 60
-    maxDuration: 120
+    duration: 50
+    maxDuration: 100
   - type: PowerGridCheckRule
 
 - type: entity
@@ -501,9 +505,9 @@
   id: LoneOpsSpawn
   components:
   - type: StationEvent
-    earliestStart: 35
-    weight: 5.5
-    minimumPlayers: 20
+    earliestStart: 25
+    weight: 3
+    minimumPlayers: 5
     duration: null # LoneOpsSpawn needs an infinite duration so that it inherits the NukeOpsRule things of an actually appropriate end screen (not always "Neutral outcome!") and... ending the game if the station is nuked.
     occursDuringRoundEnd: false
   - type: RuleGrids

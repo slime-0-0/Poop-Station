@@ -4,10 +4,6 @@
   antagonist: true
   setPreference: true
   objective: roles-antag-mothership-core-objective
-  requirements:
-  - !type:RoleTimeRequirement
-    role: JobBorg
-    time: 18000  # 5 hrs
   guides: [ Xenoborgs ]
 
 - type: antagSpecifier
@@ -22,10 +18,6 @@
   antagonist: true
   setPreference: true
   objective: roles-antag-xenoborg-objective
-  requirements:
-  - !type:RoleTimeRequirement
-    role: JobBorg
-    time: 18000  # 5 hrs
   guides: [ Xenoborgs ]
 
 - type: antagSpecifier

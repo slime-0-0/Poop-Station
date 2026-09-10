@@ -29,11 +29,13 @@
   - type: SubGamemodes
     rules:
     - id: Thief
-      prob: 0.5
+      prob: 0
     - id: SubWizard
       prob: 0.05
     - id: SubXenoborgs
       prob: 0.05
+    - id: Changeling
+      prob: 0.6
 
 - type: entity
   parent: BaseGameRule
@@ -42,9 +44,11 @@
   - type: SubGamemodes
     rules:
     - id: Thief
-      prob: 0.5
+      prob: 0
     - id: SubXenoborgs
       prob: 0.05
+    - id: Changeling
+      prob: 0.50
 
 - type: entity
   parent: BaseGameRule
@@ -53,9 +57,11 @@
   - type: SubGamemodes
     rules:
     - id: Thief
-      prob: 0.5
+      prob: 0
     - id: SubWizard
       prob: 0.05
+    - id: Changeling
+      prob: 0.7
 
 - type: entity
   parent: BaseGameRule
@@ -64,6 +70,8 @@
   - type: SubGamemodes
     rules:
     - id: Thief
+      prob: 0
+    - id: Changeling
       prob: 0.5
 
 - type: entity
@@ -211,7 +219,11 @@
   components:
   - type: ChangelingRule
   - type: GameRule
-    minPlayers: 25
+    minPlayers: 5
+    delay:
+      min: 240
+      max: 420
+    cancelPresetOnTooFewPlayers: false
   - type: AntagSelection
     agentName: changeling-round-end-agent-name
     antags:
@@ -230,13 +242,15 @@
     - groups: ChangelingObjectiveGroupKillDummy
       maxPicks: 1
     maxDifficulty: 8
+  - type: DynamicRuleCost
+    cost: 75
 
 - type: entity
   id: Revolutionary
   parent: [BaseGameRule, BaseRoundstartAntagRule]
   components:
   - type: GameRule
-    minPlayers: 15
+    minPlayers: 7
   - type: RevolutionaryRule
   - type: AntagSelection
     selectionTime: PrePlayerSpawn
@@ -287,7 +301,7 @@
   id: Wizard
   components:
   - type: GameRule
-    minPlayers: 10
+    minPlayers: 8
   - type: DynamicRuleCost
     cost: 150
 

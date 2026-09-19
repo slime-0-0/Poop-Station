@@ -8,6 +8,5 @@
 - type: soundCollection
   id: PowerOn
   files:
-  - /audio/Announcements/awyeahwhatupbaby.ogg
-  #- /Audio/Announcements/power_on.ogg
+  - /Audio/Announcements/power_on.ogg
   

@@ -1,17 +1,41 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 289.0.0
+  engineVersion: 290.0.0
   forkId: ""
   forkVersion: ""
-  time: 09/15/2026 01:46:49
-  entityCount: 16537
+  time: 09/22/2026 15:51:04
+  entityCount: 16513
 maps:
 - 126
 grids:
 - 2
 orphans: []
 nullspace:
+- 15658
+- 15681
+- 16468
+- 16469
+- 16470
+- 16471
+- 16472
+- 16473
+- 16474
+- 16475
+- 16476
+- 16477
+- 16478
+- 16479
+- 16480
+- 16481
+- 16482
+- 16483
+- 16484
+- 16485
+- 16486
+- 16487
+- 16488
+- 16489
 - 16490
 - 16491
 - 16492
@@ -418,7 +442,7 @@ entities:
           -2,-4:
             0: 30582
           -2,-3:
-            0: 26471
+            0: 26215
           -3,-2:
             1: 34952
           -2,-1:
@@ -430,6 +454,8 @@ entities:
           -2,0:
             0: 2191
             1: 768
+          -2,-5:
+            0: 26214
           -1,-4:
             1: 17
             0: 28672
@@ -2052,6 +2078,30 @@ entities:
     - type: ExplosionAirtightGrid
     - type: ChunkContainer
       chunkEntities:
+      - 15658
+      - 15681
+      - 16468
+      - 16469
+      - 16470
+      - 16471
+      - 16472
+      - 16473
+      - 16474
+      - 16475
+      - 16476
+      - 16477
+      - 16478
+      - 16479
+      - 16480
+      - 16481
+      - 16482
+      - 16483
+      - 16484
+      - 16485
+      - 16486
+      - 16487
+      - 16488
+      - 16489
       - 16490
       - 16491
       - 16492
@@ -3600,6 +3650,11 @@ entities:
       parent: 2
       rot: 1.5707963267948966 rad
       pos: -0.5,-10.5
+  - uid: 590
+    components:
+    - type: Transform
+      parent: 2
+      pos: 33.5,26.5
 - proto: AirlockCaptainLocked
   entities:
   - uid: 2616
@@ -5036,6 +5091,13 @@ entities:
     - type: Transform
       parent: 2
       pos: 13.5,-22.5
+- proto: AirlockMaintEVALocked
+  entities:
+  - uid: 205
+    components:
+    - type: Transform
+      parent: 2
+      pos: 9.5,-10.5
 - proto: AirlockMaintGlassLocked
   entities:
   - uid: 223

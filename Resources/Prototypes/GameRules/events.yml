@@ -241,9 +241,9 @@
   components:
   - type: StationEvent
     weight: 6
-    earliestStart: 20 # can start early since lings need time to start doing stuff
+    earliestStart: 15 # can start early since lings need time to start doing stuff
     reoccurrenceDelay: 40
-    minimumPlayers: 20
+    minimumPlayers: 5
     duration: null
     occursDuringRoundEnd: false
   - type: SpaceSpawnRule

@@ -1141,6 +1141,38 @@
 # Tastes like crab.
 
 - type: entity
+  name: bowl of poop
+  parent: FoodBowlBase
+  id: FoodSoupPoop
+  description: Nothing like the real deal but it sure tastes like it
+  components:
+  - type: FlavorProfile
+    flavors:
+      - creamy
+      - slimy
+      - sour
+  - type: Sprite
+    layers:
+    - state: bowl
+    - state: poop
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 29
+      - ReagentId: Vitamin
+        Quantity: 1
+      - ReagentId: Protein
+        Quantity: 5
+      - ReagentId: GastroToxin
+        Quantity: 20
+      - ReagentId: Theobromine
+        Quantity: 6
+      - ReagentId: CocoaPowder
+        Quantity: 4
+# Tastes like shit.
+
+- type: entity
   parent: FoodBowlBase
   id: FoodSoupElectron
   name: electron soup

@@ -893,6 +893,18 @@
     FoodMeatFish: 1
 
 - type: microwaveMealRecipe
+  id: RecipePoop
+  name: microwave-meal-recipe-poop-name
+  result: FoodSoupPoop
+  time: 15
+  group: Soup
+  reagents:
+    GastroToxin: 40
+  solids:
+    FoodBowlBig: 1
+    FoodSnackChocolateBar: 2
+
+- type: microwaveMealRecipe
   id: RecipeMeatballSoup
   name: microwave-meal-recipe-meatball-soup-name
   result: FoodSoupMeatball

@@ -83,7 +83,7 @@
     path: /Audio/Jukebox/Shadi.ogg
 
 - type: jukebox
-  id: 
+  id:
   name: Russ Morgan Orchestra - Were You Foolin
   path:
     path: /Audio/Jukebox/WereYouFoolin.ogg
@@ -93,3 +93,9 @@
   name: Micheal Jackson - Man in the Mirror
   path:
     path: /Audio/Jukebox/ManInTheMirror.ogg
+
+- type: jukebox
+  id: Alalalong
+  name: BOB MARLEY - Alalalong
+  path:
+    path: /Audio/Jukebox/BOBMARLEY-Alalalong.ogg
